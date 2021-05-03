@@ -1,0 +1,14 @@
+.budgets {
+  &-section {
+    .row {
+      margin-top: 87/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        margin-top: 87/$largeDesktop + rem;
+      }
+    }
+    padding-top: 67/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      padding-top: 67/$largeDesktop + rem;
+    }
+  }
+}

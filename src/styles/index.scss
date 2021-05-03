@@ -1,0 +1,32 @@
+@import 'var';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import "~bootstrap/scss/mixins";
+@import '~swiper/swiper.scss';
+@import '~animate.css';
+$theme-colors: (
+        "primary": $primary-blue
+);
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'fonts';
+
+
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/banner';
+@import 'components/careers';
+@import 'components/modern';
+@import 'components/values';
+@import 'components/perks';
+@import 'components/budgets';
+@import 'components/offices';
+@import 'components/glassdoorr';
+@import 'components/interview';
+@import 'components/viewjob';
+@import 'components/form';
+
+
+
+@import 'custom';
+

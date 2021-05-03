@@ -1,0 +1,221 @@
+.form {
+  &-block{
+    padding: 0 190/$middleDesktop +rem;
+    padding-top: 77/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      padding: 0 190/$largeDesktop +rem;
+      padding-top: 77/$largeDesktop + rem;
+    }
+  }
+  &-group {
+    &.inputs {
+      padding-right: 25/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        padding-right: 25/$largeDesktop + rem;
+      }
+    }
+
+    &.textarea {
+      padding-left: 25/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        padding-left: 25/$largeDesktop + rem;
+      }
+    }
+  }
+
+  &-section {
+    position: relative;
+    &::after {
+      content: '';
+      width: 100%;
+      background-color: $text-secondary-black;
+      height: 60%;
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+    }
+
+    .react-datepicker-popper {
+      width: 110% !important;
+    }
+    .react-datepicker-wrapper {
+      .inputDateTimePicker {
+        margin-bottom: 0;
+      }
+      width: 80%;
+      position: relative;
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        width: 18/$middleDesktop + rem;
+        height: 18/$middleDesktop + rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 1;
+        @media (min-width: 1400px) {
+          width: 18/$largeDesktop + rem;
+          height: 18/$largeDesktop + rem;
+        }
+      }
+      &::before {
+        background-image: url('../../images/icons/input-calendar-icon.svg');
+        right: 45/$middleDesktop + rem;
+        @media (min-width: 1400px) {
+          right: 45/$largeDesktop + rem;
+        }
+      }
+      &::after {
+        background-image: url('../../images/icons/input-time-icon.svg');
+        right: 15/$middleDesktop + rem;
+        @media (min-width: 1400px) {
+          right: 15/$largeDesktop + rem;
+        }
+      }
+    }
+
+
+
+    form {
+      border-radius: 25/$middleDesktop + rem;
+      box-shadow: 0px 11px 22px #70707017;
+      border: 1px solid $border-grey;
+      padding: 68/$middleDesktop + rem 77/$middleDesktop + rem 30/$middleDesktop +rem;
+      margin-top: 37/$middleDesktop +rem;
+      margin-bottom: 77/$middleDesktop + rem;
+      background-color: $white;
+      @media (min-width: 1400px) {
+        margin-top: 37/$largeDesktop +rem;
+        border-radius: 25/$largeDesktop + rem;
+        padding: 68/$largeDesktop + rem 77/$largeDesktop + rem 30/$largeDesktop +rem;
+        margin-bottom: 77/$largeDesktop + rem;
+      }
+    }
+
+    textarea {
+      box-shadow: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 25/$middleDesktop + rem;
+      border: 1px solid $border-grey;
+      outline: none;
+      height: 185/$middleDesktop +rem;
+      width: 100%;
+      padding-left: 15px;
+      padding-top: 15px;
+      font-size: $subtitle-font-size / $middleDesktop + rem;
+      @include for-big-desktop-up($subtitle-font-size);
+      @media (min-width: 1400px) {
+        border-radius: 25/$largeDesktop + rem;
+        height: 185/$largeDesktop +rem;
+      }
+    }
+
+    input, select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      box-shadow: none;
+      font-size: $subtitle-font-size / $middleDesktop + rem;
+      @include for-big-desktop-up($subtitle-font-size);
+      padding-left: 15px;
+      border: 1px solid $border-grey;
+      outline: none;
+      border-radius: 158/$middleDesktop + rem;
+      width: 100%;
+      height: 46/$middleDesktop + rem;
+      margin-bottom: 25/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        border-radius: 158/$largeDesktop + rem;
+        height: 46/$largeDesktop + rem;
+        margin-bottom: 25/$largeDesktop + rem;
+      }
+    }
+
+    select {
+      background-color: $bg-grey;
+      border: 1px solid transparent;
+      background-image: url('../../images/down-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: 94% center;
+      -webkit-appearance: none;
+      appearance: none;
+      background-size: 5%;
+    }
+
+    input, textarea {
+      &::-webkit-input-placeholder { /* Edge */
+        color: $border-grey;
+        font-size: $primary-font-size / $middleDesktop + rem;
+        @include for-big-desktop-up($primary-font-size);
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $border-grey;
+        font-size: $primary-font-size / $middleDesktop + rem;
+        @include for-big-desktop-up($primary-font-size);
+      }
+
+      &::placeholder {
+        color: $border-grey;
+        font-size: $primary-font-size / $middleDesktop + rem;
+        @include for-big-desktop-up($primary-font-size);
+      }
+    }
+    .input-file {
+      align-items: center;
+      padding-left: 40/$middleDesktop + rem;
+      justify-content: flex-end;
+      margin-top: 25/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        padding-left: 40/$largeDesktop + rem;
+        margin-top: 25/$largeDesktop + rem;
+      }
+      input {
+        border: none;
+        margin-bottom: 0;
+        width: auto;
+        height: auto;
+      }
+      label {
+        margin-bottom: 0;
+        color: $border-grey;
+        font-size: $primary-font-size / $middleDesktop + rem;
+        @include for-big-desktop-up($primary-font-size);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .form {
+    &-block{
+      padding: 25px;
+    }
+    &-section {
+      .react-datepicker-popper {
+        width: 120% !important;
+      }
+      input,select {
+        height: 38px;
+      }
+      textarea {
+        height: 118px;
+      }
+      form {
+        padding: 38px 25px;
+      }
+    }
+    &-group {
+      padding: 0 !important;
+    }
+  }
+  .form-section .input-file input {
+    width: 100%;
+  }
+}

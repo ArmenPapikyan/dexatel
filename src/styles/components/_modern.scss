@@ -1,0 +1,51 @@
+.modern {
+  &-section {
+    padding-top: 70/$middleDesktop + rem;
+    margin-top: 40/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      padding-top: 70/$largeDesktop + rem;
+      margin-top: 40/$largeDesktop + rem;
+    }
+
+    .section-subtitle {
+      margin-bottom: 45/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        margin-bottom: 45/$largeDesktop + rem;
+      }
+    }
+  }
+  &-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 33%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+}
+.infinite-scroll-slider {
+  width: 100%;
+  .swiper-wrapper{
+    transition-timing-function : linear;
+  }
+}
+.transparent-btn {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 10;
+  &.left {
+    left: 0;
+  }
+  &.right {
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .modern {
+    &-img {
+      padding-top: 50%;
+    }
+  }
+}

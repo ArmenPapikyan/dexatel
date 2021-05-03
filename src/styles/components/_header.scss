@@ -1,0 +1,112 @@
+.navbar-light .navbar-nav .nav-link {
+  color: $text-grey;
+  font-size: $primary-font-size / $middleDesktop + rem;
+  @include for-big-desktop-up($primary-font-size);
+  font-weight: $font-weight-light;
+  outline: none;
+
+  &:focus {
+    color: $text-grey;
+  }
+}
+
+.navbar {
+  padding: .5rem 2rem;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  font-family: 'Cocogoose Pro SemiLight', sans-serif;
+}
+
+.navbar-brand {
+  img {
+    height: 36px;
+  }
+}
+
+.app {
+  &-header {
+    .dropdown-menu {
+      box-shadow: 0px 11px 22px #46464617;
+      border-color: #f6f7f8;
+      color: $text-grey;
+      font-size: $primary-font-size / $middleDesktop + rem;
+      @include for-big-desktop-up($primary-font-size);
+      font-weight: $font-weight-light;
+      width: 500/$middleDesktop + rem;
+      min-width: 500/$middleDesktop + rem;
+      padding: 30/$middleDesktop + rem 25/$middleDesktop + rem;
+      border-radius: 24/$middleDesktop +rem;
+      @media (min-width: 1400px) {
+        width: 500/$largeDesktop + rem;
+        min-width: 500/$largeDesktop + rem;
+        padding: 30/$largeDesktop + rem 25/$largeDesktop + rem;
+        border-radius: 24/$largeDesktop +rem;
+      }
+
+      &.show {
+        display: flex;
+      }
+
+      .nav-item {
+        margin-bottom: 20/$middleDesktop + rem;
+        @media (min-width: 1400px) {
+          margin-bottom: 20/$largeDesktop + rem;
+        }
+      }
+    }
+
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: white;
+    z-index: 1000;
+
+    .navbar {
+      &-auth {
+        a {
+          font-size: $btn-font-size / $middleDesktop + rem;
+          @include for-big-desktop-up($btn-font-size);
+          margin-right: 2rem;
+          color: $primary-blue;
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  &-sublinks {
+    //position: absolute;
+    //opacity: 0;
+    //visibility: hidden;
+  }
+}
+
+.navbar-nav {
+  width: 70%;
+  justify-content: space-between;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+  padding-left: 8%;
+}
+
+@media (max-width: 768px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 12px;
+  }
+  .navbar-collapse {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .nav-item {
+    margin: 5px 0;
+  }
+  .app-header .dropdown-menu {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,98 @@
+.banner {
+  &-section {
+    margin-top: 120/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      margin-top: 120/$largeDesktop + rem;
+    }
+  }
+
+  &-title {
+    color: $text-primary-black;
+
+    h1 {
+      font-size: $heading-font-size / $middleDesktop + rem;
+      @include for-big-desktop-up($heading-font-size);
+      font-family: 'Cocogoose Pro SemiLight', sans-serif;
+    }
+  }
+
+  &-subtitle {
+    font-size: $heading-font-size-secondary / $middleDesktop + rem;
+    @include for-big-desktop-up($heading-font-size-secondary);
+    font-family: 'Cocogoose Pro Light', sans-serif;
+    margin-bottom: 0;
+  }
+
+  &-text {
+    font-size: $default-font-size / $middleDesktop + rem;
+    @include for-big-desktop-up($default-font-size);
+    margin-bottom: 20/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      margin-bottom: 20/$largeDesktop + rem;
+    }
+  }
+
+  &-info {
+    background-image: url('../../images/decorations/banner-decoration.svg');
+    background-repeat: no-repeat;
+    background-size: 220/$middleDesktop +rem;
+    padding-left: 57/$middleDesktop + rem;
+    padding-right: 100/$middleDesktop + rem;
+    padding-top: 50/$middleDesktop +em;
+    background-position: 5/$middleDesktop + rem  (-30/$middleDesktop + rem);
+    line-height: 1.7;
+    position: relative;
+    top: 20/$middleDesktop + em;
+    @media (min-width: 1400px) {
+      background-size: 220/$largeDesktop +rem;
+      padding-left: 57/$largeDesktop + rem;
+      padding-right: 100/$largeDesktop + em;
+      padding-top: 50/$largeDesktop +em;
+      background-position: 5/$largeDesktop + rem  -(30/$largeDesktop + rem);
+      top: 20/$largeDesktop + em;
+    }
+
+    .line {
+      width: 65px;
+      height: 1px;
+      background-color: $primary-blue;
+      margin-top: 24px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &-img {
+    img {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    &-section {
+      .row {
+        .col-md-6 {
+          &:nth-last-of-type(2){
+            order: 2
+          }
+        }
+      }
+    }
+    &-title {
+      h1 {
+        font-size: 30px;
+      }
+      &-subtitle {
+        font-size: 20px;
+      }
+    }
+    &-info {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &-text {
+      font-size: 12px;
+    }
+
+  }
+}

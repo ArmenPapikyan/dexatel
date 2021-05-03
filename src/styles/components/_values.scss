@@ -1,0 +1,95 @@
+.values {
+  &-section {
+    padding-bottom: 95/$middleDesktop +rem;
+    @media (min-width: 1400px) {
+      padding-bottom: 95/$largeDesktop +rem;
+    }
+
+    .decoration {
+      height: 100%;
+      top: -13%;
+      left: -1%;
+      @media (min-width: 1400px) {
+        left: -2.5%;
+      }
+    }
+
+    .wow {
+      padding-right: 20/$middleDesktop +rem;
+      @media (min-width: 1400px) {
+        padding-right: 20/$largeDesktop +rem;
+      }
+    }
+
+    .section-title {
+      padding-top: 83/$middleDesktop + rem;
+      padding-bottom: 100/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        padding-top: 83/$largeDesktop + rem;
+        padding-bottom: 100/$largeDesktop + rem;
+      }
+    }
+  }
+
+  &-text {
+    line-height: 1.9;
+    font-size: $primary-font-size / $middleDesktop + rem;
+    @include for-big-desktop-up($primary-font-size);
+    padding-right: 45/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      padding-right: 45/$largeDesktop + rem;
+    }
+  }
+
+  &-block {
+    background-color: $white;
+    border-left: 2px solid black;
+    border-top-right-radius: 15/$middleDesktop + rem;
+    border-bottom-right-radius: 15/$middleDesktop + rem;
+    padding: 33/$middleDesktop + rem 0/$middleDesktop + rem 50/$middleDesktop + rem 35/$middleDesktop + rem;
+    height: 230/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      padding: 33/$largeDesktop + rem 0/$largeDesktop + rem 50/$largeDesktop + rem 35/$largeDesktop + rem;
+      height: 230/$largeDesktop + rem;
+      border-top-right-radius: 15/$largeDesktop + rem;
+      border-bottom-right-radius: 15/$largeDesktop + rem;
+    }
+    position: relative;
+    z-index: 1;
+
+    .section {
+      &-subtitle {
+        margin-bottom: 16/$middleDesktop + rem;
+        @media (min-width: 1400px) {
+          margin-bottom: 16/$largeDesktop + rem;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .values {
+    &-block {
+      margin-left: 15px;
+      margin-bottom: 40px;
+      height: 175px;
+      .section-subtitle {
+        font-family: 'Cocogoose Pro SemiLight', sans-serif;
+      }
+    }
+
+    &-text {
+      font-size: 11px;
+    }
+
+    &-section {
+      .decoration {
+        top: -20px;
+        left: 10px;
+        height: 70%;
+      }
+    }
+  }
+}

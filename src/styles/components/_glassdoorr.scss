@@ -1,0 +1,192 @@
+.glassdoor {
+  &-section {
+    padding-top: 140/$middleDesktop +rem;
+    padding-bottom: 130/$middleDesktop +rem;
+    position: relative;
+    overflow: hidden;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 90px;
+      left: 0;
+      background: white;
+      z-index: 0;
+      transform-origin: center;
+    }
+
+    &:after {
+      bottom: 0;
+      transform: rotate(2deg) translateY(50/$middleDesktop + em);
+      @media (min-width: 1400px) {
+        transform: rotate(2deg) translateY(50/$largeDesktop + em);
+      }
+    }
+
+    &:before {
+      top: 0;
+      transform: rotate(2deg) translateY(-50/$middleDesktop + em);
+      @media (min-width: 1400px) {
+        transform: rotate(2deg) translateY(-50/$largeDesktop + em);
+      }
+    }
+
+    @media (min-width: 1400px) {
+      padding-top: 140/$largeDesktop +rem;
+      padding-bottom: 130/$largeDesktop +rem;
+    }
+
+    .swiper {
+      &-pagination {
+        position: absolute;
+        bottom: 0 !important;
+        width: 100%;
+        text-align: center;
+
+        &-bullet {
+          width: 72/$middleDesktop + rem;
+          height: 3px;
+          background-color: #D6D6D6;
+          display: inline-block;
+          margin: 0 10/$middleDesktop + rem !important;
+          border-radius: 5px;
+          opacity: 1;
+          @media (min-width: 1400px) {
+            width: 72/$largeDesktop + rem;
+            margin: 0 10/$largeDesktop + rem !important;
+          }
+
+          &-active {
+            background-color: $green
+          }
+        }
+      }
+    }
+  }
+
+  &-rating {
+    position: absolute;
+    width: 10.5%;
+    z-index: 3;
+    left: 4.5%;
+    top: -9%;
+    background-color: $bg-grey;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-slide {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    opacity: 0 !important;
+
+    &.swiper-slide-active {
+      opacity: 1 !important;
+
+      .glassdoor-info {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &-img {
+    position: absolute;
+    width: 19%;
+    right: 2%;
+    top: 15%;
+    border-bottom: 10/$middleDesktop + rem solid $text-primary-black;
+    border-right: 10/$middleDesktop+rem solid $text-primary-black;
+    border-radius: 25/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      border-bottom: 10/$largeDesktop+rem solid $text-primary-black;
+      border-right: 10/$largeDesktop +rem solid $text-primary-black;
+      border-radius: 25/$largeDesktop + rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-info {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 500ms linear;
+    position: relative;
+
+    &-block > div {
+      background-color: $bg-grey;
+      border-radius: 25/$middleDesktop + rem;
+      border: 2px solid $primary-blue-opacity;
+      padding: 52/$middleDesktop + rem 203/$middleDesktop + rem 60/$middleDesktop + rem 52/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        border-radius: 25/$largeDesktop + rem;
+        padding: 52/$largeDesktop + rem 203/$largeDesktop + rem 60/$largeDesktop + rem 52/$largeDesktop + rem;
+      }
+    }
+  }
+
+  &-info {
+    h4 {
+      color: $text-primary-black;
+      font-style: italic;
+      font-size: $subtitle-font-size/$middleDesktop + rem;
+      @include for-big-desktop-up($subtitle-font-size);
+    }
+
+    p {
+      font-family: 'Cocogoose Pro UltraLightItalic', sans-serif;
+      color: $text-primary-black;
+      font-size: $subtitle-font-size/$middleDesktop + rem;
+      letter-spacing: .45/$middleDesktop + rem;
+      line-height: 39/$middleDesktop + rem;
+      @include for-big-desktop-up($subtitle-font-size);
+      @media (min-width: 1400px) {
+        letter-spacing: .45/$largeDesktop + rem;
+        line-height: 39/$largeDesktop + rem;
+      }
+    }
+
+    span {
+      color: $text-primary-black;
+      font-size: $primary-font-size/$middleDesktop + rem;
+      @include for-big-desktop-up($primary-font-size);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .glassdoor {
+    &-info {
+      &-block {
+        > div {
+          padding: 50px 30px 140px 30px;
+        }
+      }
+    }
+    &-rating {
+      width: 30%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: -4%;
+    }
+    &-img {
+      width: 45%;
+      right: 0;
+      top: auto;
+      left: 0;
+      margin: auto;
+      bottom: -10%;
+    }
+    &-section {
+      .swiper-container {
+        padding-bottom: 60px;
+      }
+    }
+  }
+}

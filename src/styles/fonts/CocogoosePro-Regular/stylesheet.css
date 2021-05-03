@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Cocogoose Pro';
+    src: url('CocogoosePro-Regular.eot');
+    src: url('CocogoosePro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CocogoosePro-Regular.woff2') format('woff2'),
+        url('CocogoosePro-Regular.woff') format('woff'),
+        url('CocogoosePro-Regular.ttf') format('truetype'),
+        url('CocogoosePro-Regular.svg#CocogoosePro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

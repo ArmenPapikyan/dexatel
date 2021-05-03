@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Cocogoose Pro SemiLight';
+    src: url('CocogoosePro-SemiLight.eot');
+    src: url('CocogoosePro-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('CocogoosePro-SemiLight.woff2') format('woff2'),
+        url('CocogoosePro-SemiLight.woff') format('woff'),
+        url('CocogoosePro-SemiLight.ttf') format('truetype'),
+        url('CocogoosePro-SemiLight.svg#CocogoosePro-SemiLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

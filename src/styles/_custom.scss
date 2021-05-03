@@ -1,0 +1,103 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-largest {
+    max-width: 1415px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    justify-content: center;
+  }
+}
+
+body {
+  font-family: 'Cocogoose Pro Light', sans-serif;
+  color: $text-grey;
+  letter-spacing: .5/$middleDesktop + rem;
+  @media (min-width: 1400px) {
+    letter-spacing: .5/$largeDesktop + rem;
+  }
+}
+
+.main {
+  padding-top: 62/$middleDesktop + rem;
+  @media (min-width: 1400px) {
+    padding-top: 62/$largeDesktop + rem;
+  }
+}
+
+//buttons
+.btn {
+  font-weight: $font-weight-SemiLight;
+  font-family: 'Cocogoose Pro SemiLight', sans-serif;
+  @include borderRadius(25);
+  font-size: $btn-font-size / $middleDesktop + rem;
+  @include for-big-desktop-up($btn-font-size);
+
+  &.small {
+    @include padding(5, 15);
+  }
+
+  &.large {
+    @include padding(5, 30);
+  }
+  &.largest {
+    padding: 16/$middleDesktop +rem 24/$middleDesktop +rem;
+    @media (min-width: 1400px) {
+      padding: 16/$largeDesktop +rem 24/$largeDesktop +rem;
+    }
+  }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+.section {
+  &-title {
+    font-family: 'Cocogoose Pro Regular', sans-serif;
+    color: $text-primary-black;
+    word-spacing: 2px;
+    font-size: $primary-title-font-size / $middleDesktop + rem;
+    @include for-big-desktop-up($primary-title-font-size);
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
+
+  &-subtitle {
+    font-family: 'Cocogoose Pro Light', sans-serif;
+    color: $text-primary-black;
+    font-size: $subtitle-font-size / $middleDesktop + rem;
+    @include for-big-desktop-up($subtitle-font-size);
+    line-height: 1.7;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.grey-bg {
+  background-color: $bg-grey;
+}
+
+.decoration {
+  position: absolute;
+}
+strong {
+  font-family: 'Cocogoose Pro Regular',sans-serif;
+}
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected,
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range{
+  background-color: $primary-blue !important;
+}
+ul,li,ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

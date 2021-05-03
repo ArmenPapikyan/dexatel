@@ -1,0 +1,50 @@
+//fonts
+$largeDesktop:16;
+$middleDesktop:24;
+$font-family-base: 'Cocogoose Pro', sans-serif;
+$heading-font-size: 45;
+$heading-font-size-secondary: 35;
+$default-font-size: 16;
+$btn-font-size: 15;
+$primary-title-font-size: 27;
+$secondary-title-font-size: 20;
+$primary-font-size: 13;
+$subtitle-font-size: 18;
+@mixin padding($value1,$value2) {
+  padding: ($value1 / 16) + rem ($value2 / 16) + rem;
+}
+
+@mixin borderRadius($value) {
+  border-radius: ($value / 16) + rem;
+}
+@mixin for-middle-desktop-up($x) {
+  @media (min-width: 1200px) {
+    font-size: $x/$middleDesktop +rem;
+  }
+}
+@mixin for-big-desktop-up($x) {
+  @media (min-width: 1400px) {
+    font-size: $x/16 +rem;
+  }
+}
+
+
+
+$bg-grey: #F2F3F6;
+$white: #FFFFFF;
+$primary-blue: #3B6FD9;
+$primary-blue-opacity: #3b6fd940;
+$text-grey: #585F73;
+$text-primary-black: #170F35;
+$text-secondary-black: #160637;
+$green: #02C8C1;
+$border-grey:#D6D6D6;
+
+
+$font-weight-light: 200;
+$font-weight-SemiLight: 300;
+$font-weight-regular: normal;
+
+$font-style-italic: italic
+
+

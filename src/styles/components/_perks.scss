@@ -1,0 +1,60 @@
+.perks {
+  &-section {
+    .row {
+      justify-content: center;
+      margin-top: 87/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        margin-top: 87/$largeDesktop + rem;
+      }
+    }
+
+    padding: 0 463/$middleDesktop + rem;
+    padding-top: 80/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      padding: 0 463/$largeDesktop + rem;
+      padding-top: 80/$largeDesktop + rem;
+    }
+  }
+
+  &-txt {
+    font-size: $primary-font-size/$middleDesktop + rem;
+    line-height: 1.99;
+    display: inline-block;
+    @media (min-width: 1400px) {
+      font-size: $primary-font-size/$largeDesktop + rem;
+    }
+  }
+
+  &-item {
+    img {
+      width: 115/$middleDesktop + rem;
+      height: 115/$middleDesktop + rem;
+      margin-bottom: 30/$middleDesktop + rem;
+      @media (min-width: 1400px) {
+        width: 115/$largeDesktop + rem;
+        height: 115/$largeDesktop + rem;
+        margin-bottom: 30/$largeDesktop + rem;
+      }
+    }
+
+    margin-bottom: 45/$middleDesktop + rem;
+    @media (min-width: 1400px) {
+      margin-bottom: 45/$largeDesktop + rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .perks,.budgets {
+    &-section {
+      padding: 0 85px;
+      padding-top: 40px;
+      .section-subtitle {
+        font-family: 'Cocogoose Pro SemiLight',sans-serif;
+      }
+    }
+  }
+  .perks-txt {
+    font-size: 11px;
+  }
+}

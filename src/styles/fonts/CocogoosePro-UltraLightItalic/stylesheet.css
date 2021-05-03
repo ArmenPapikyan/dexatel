@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Cocogoose Pro';
+    src: url('CocogoosePro-UltraLightItalic.eot');
+    src: url('CocogoosePro-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('CocogoosePro-UltraLightItalic.woff2') format('woff2'),
+        url('CocogoosePro-UltraLightItalic.woff') format('woff'),
+        url('CocogoosePro-UltraLightItalic.ttf') format('truetype'),
+        url('CocogoosePro-UltraLightItalic.svg#CocogoosePro-UltraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
