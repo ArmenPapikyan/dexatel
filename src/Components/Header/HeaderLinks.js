@@ -1,10 +1,8 @@
 import React from 'react';
-import {NavLink, useLocation} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {routes} from '../../Constatns/constants'
 
 function HeaderLinks() {
-    const location = useLocation()
-    let path = location.pathname;
     const handleClick = (e,el) => {
 
         if (el.subRoutes.length) e.preventDefault()

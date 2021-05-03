@@ -17,7 +17,7 @@ function Values() {
                 <h2 className="section-title text-center">Our Values</h2>
                 <div className="row">
                     <div className="col-md-6 col-lg-4">
-                        <img className="decoration" src="/img/decorations/dotes.svg"/>
+                        <img className="decoration" src="/img/decorations/dotes.svg" alt="decor"/>
                         <div className="wow animate__animated animate__fadeInUp">
                             <div className="values-block">
                                 <h2 className="section-subtitle">Learn as much as impossible</h2>
@@ -27,7 +27,7 @@ function Values() {
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-4">
-                        <img className="decoration" src="/img/decorations/dotes.svg"/>
+                        <img className="decoration" src="/img/decorations/dotes.svg" alt="decor"/>
                         <div className="wow animate__animated animate__fadeInUp">
                             <div className="values-block">
                                 <h2 className="section-subtitle">Contribute to our knowledge base</h2>
@@ -37,7 +37,7 @@ function Values() {
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-4">
-                        <img className="decoration" src="/img/decorations/dotes.svg"/>
+                        <img className="decoration" src="/img/decorations/dotes.svg" alt="decor"/>
                         <div className="wow animate__animated animate__fadeInUp">
                             <div className="values-block">
                                 <h2 className="section-subtitle">Drive results</h2>

@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import StarRatings from 'react-star-ratings';
+import React from "react";
 import SwiperCore, {Pagination, EffectFade} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {glassdoor} from '../../Constatns/constants'
@@ -8,7 +7,6 @@ import 'swiper/components/pagination/pagination.scss';
 SwiperCore.use([Pagination, EffectFade]);
 
 function GlassDoor() {
-    const [swiper, setSwiper] = useState();
     return (
         <div className="rotate">
             <div className="glassdoor-section grey-bg">
@@ -16,7 +14,6 @@ function GlassDoor() {
                     <div className="row">
                         <div className="col-md-12">
                             <Swiper
-                                onSwiper={(swiper) => setSwiper(swiper)}
                                 speed={1000}
                                 pagination={{clickable: true}}
                                 effect='fade'>

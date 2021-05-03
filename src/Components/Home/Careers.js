@@ -1,19 +1,10 @@
 import React from 'react';
-import {careersLogos} from '../../Constatns/constants'
-
 function Careers() {
     return (
         <div className="container container-largest careers-section">
             <div className="row">
                 <div className="col-md-6">
                     <div className="careers-logos">
-                        {/*{careersLogos.map((el, i) => {*/}
-                        {/*    return (*/}
-                        {/*        <div className="col-md-4" key={i}>*/}
-                        {/*            <img src={el} alt={el}/>*/}
-                        {/*        </div>*/}
-                        {/*    )*/}
-                        {/*})}*/}
                         <img src="/img/careers/careers-list.png" alt=""/>
                     </div>
                 </div>

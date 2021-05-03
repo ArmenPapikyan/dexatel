@@ -1,5 +1,5 @@
 import React from 'react';
-import {budgets, perks} from '../../Constatns/constants'
+import {budgets} from '../../Constatns/constants'
 function Budgets(){
     return(
         <div className="container-largest budgets-section container">

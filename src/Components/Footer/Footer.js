@@ -19,7 +19,7 @@ function Footer() {
                                     {el.links.map((element,index)=>{
                                         return (
                                             <li key={index}>
-                                                <Link className="footer-links-item" to={element.link}>{element.name}</Link>
+                                                <Link className="footer-links-item" to={'/'}>{element.name}</Link>
                                             </li>
                                         )
                                     })}
